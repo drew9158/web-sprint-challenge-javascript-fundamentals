@@ -203,10 +203,10 @@ const cuboid = new CuboidMaker({
 // 🦄🦄🦄 Topic 4: Classes 🦄🦄🦄 //
 //🦄🦄🦄 1. Take your prototypes from above and refactor into class syntax. Please rename your class CuboidMakerTwo and your object cuboidTwo 🦄🦄🦄
 class CuboidMakerTwo{
-  constructor(length, width, height){
-    this.length = length;
-    this.width = width;
-    this.height = height;
+  constructor(object){
+    this.length = object.length;
+    this.width = object.width;
+    this.height = object.height;
   }
   volume () {
     return this.length * this.width * this.height;
@@ -216,11 +216,15 @@ class CuboidMakerTwo{
   }
 }
 
-const cuboidTwo = new CuboidMakerTwo(4, 5, 5);
+const cuboidTwo = new CuboidMakerTwo({
+  length: 4,
+  width: 5,
+  height: 5
+});
 
 //🦄🦄🦄 Test your volume and surfaceArea methods by uncommenting the logs below: 🦄🦄🦄
-// console.log(cuboidTwo.volume()); // 100
-// console.log(cuboidTwo.surfaceArea()); // 130
+console.log(cuboidTwo.volume()); // 100
+console.log(cuboidTwo.surfaceArea()); // 130
 
 
 
@@ -250,5 +254,5 @@ const cuboidTwo = new CuboidMakerTwo(4, 5, 5);
     multiply,
     greeting,
     CuboidMaker,
-    //CuboidMakerTwo
+    CuboidMakerTwo
   }

@@ -31,14 +31,19 @@ Edit this document to include your answers after each question. Make sure to lea
     The .forEach method executes a given function on each element an array once changing the original array. (It does not return any value.)
     The .map method returns a new array with the results of executing a given function on every element of an array.
 2. Explain the difference between a callback and a higher order function.
-
+    A higher order function takes a callback as an argument and returns a function as a result.
+    A callback is a function which is passed into the higher order function.
 3. What is closure?
     A closure is a grouped section of code with a lower scope than the code around it.
     It can be used to store values in memory when repeating a function.
 4. Describe the four rules of the 'this' keyword.
-
+    1 Global Scope - This applies to the window itself. 
+    2 Implicit Binding - This applies to the object before a called function.
+    3 New Binding - This applies to the object created by a constructor function.
+    4 Explicit Binding - This is explicitly defined by the .apply method overriding Implicit Binding.
 5. Why do we need super() in an extended class?
-
+    Super() accesses the parent of the object that is currently selected. 
+    This allows greater control of an extended class.
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions

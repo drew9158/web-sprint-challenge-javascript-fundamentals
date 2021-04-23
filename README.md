@@ -33,7 +33,8 @@ Edit this document to include your answers after each question. Make sure to lea
 2. Explain the difference between a callback and a higher order function.
 
 3. What is closure?
-
+    A closure is a grouped section of code with a lower scope than the code around it.
+    It can be used to store values in memory when repeating a function.
 4. Describe the four rules of the 'this' keyword.
 
 5. Why do we need super() in an extended class?

@@ -17,9 +17,8 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
-
-
+// Though the internal variable is inside of a local scope, it is above the scope of the nested function.
+// Code within the nested function can look outside of its scope for variable context and in this case, see the internal variable. 
 
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
 /* Use summation to do the following:
@@ -28,10 +27,15 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(num) {
+  let val = 1;
+  let sum = 0;
+  for (let i = 0; i < num; i++) {
+    sum = sum + val;
+    val = ++val;
   }
+  return sum;
+}
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
@@ -56,8 +60,13 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(array){
+    let displayNames = [];
+    array.forEach(pushName);
+    function pushName (array) {
+      displayNames.push(`name: ${array.animal_name}, scientific: ${array.scientific_name}`);
+    }
+    return displayNames;
   }
   
 

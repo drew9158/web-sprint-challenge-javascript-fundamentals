@@ -77,7 +77,8 @@ const zooAnimals = [
   */
 
   function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
+    let = newArray;
+    return newArray;
   }
   
   
